@@ -1,0 +1,13 @@
+# requirements.txt
+# Core dependencies for the FastAPI server and asynchronous web service.
+
+# FastAPI framework for building the API
+fastapi
+
+# Uvicorn for serving the FastAPI application asynchronously
+uvicorn
+
+# Future Dependencies (Example: Will be added for AI logic)
+# langchain
+# openai
+# python-dotenv
