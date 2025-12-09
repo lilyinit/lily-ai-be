@@ -63,7 +63,7 @@ def summarize_document(request: SummaryRequest):
 
     try:
         # 2. Initialize LangChain LLM (using GPT-3.5-turbo model)
-        llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name="gpt-3.5-turbo")
+        llm = ChatOpenAI(model="gpt-4o-mini", openai_api_key=OPENAI_API_KEY, temperature=0.7)
 
         # 3. Define the summarization prompt
         prompt = f"""
@@ -76,7 +76,7 @@ def summarize_document(request: SummaryRequest):
         """
 
         # 4. Invoke LLM and get the response
-        response = llm([HumanMessage(content=prompt)])
+        response = llm.invoke([HumanMessage(content=prompt)])
         
         # 5. Return the result
         return {
