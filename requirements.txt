@@ -7,7 +7,8 @@ fastapi
 # Uvicorn for serving the FastAPI application asynchronously
 uvicorn
 
-# Future Dependencies (Example: Will be added for AI logic)
-# langchain
-# openai
-# python-dotenv
+# AI/LLM dependencies
+langchain       # Framework for building LLM applications (RAG, chains, etc.)
+openai          # Official Python client for OpenAI API calls
+python-dotenv   # Library to load environment variables from .env file (for local testing)
+
