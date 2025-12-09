@@ -12,3 +12,4 @@ langchain       # Framework for building LLM applications (RAG, chains, etc.)
 openai          # Official Python client for OpenAI API calls
 python-dotenv   # Library to load environment variables from .env file (for local testing)
 langchain-openai
+langchain-core

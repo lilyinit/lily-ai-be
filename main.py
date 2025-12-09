@@ -7,11 +7,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel 
 
 # LangChain/OpenAI related imports
-from langchain.schema import HumanMessage
-
-# 수정된 코드 (ChatOpenAI를 langchain_openai에서 가져옵니다)
+from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI 
-from langchain.schema import HumanMessage 
+
 
 # ... (나머지 코드는 동일)
 
